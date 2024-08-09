@@ -1,0 +1,36 @@
+<div class="formulaire" style="width: 42rem;">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <label for="nom" class="col-form-label obligatoire">Nom</label>
+            <input id="nom"
+                   class="form-control"
+                   pattern="^[a-zA-Z]+([' \-]?[a-zA-Z]+)*$"
+                   required
+                   maxlength="20"
+                   autocomplete="off"/>
+            <label for="prenom" class="col-form-label obligatoire">Prénom </label>
+            <input id="prenom"
+                   class="form-control"
+                   required
+                   maxlength="20"
+                   pattern="^[a-zA-ZÀ-ÿÂ-üçÇ]+([ '\-][a-zA-ZÀ-ÿÂ-üçÇ]+)*$"
+                   autocomplete="off"/>
+        </div>
+        <div class="col-12 col-sm-6">
+            <label for="fichier" class="col-form-label">Photo</label>
+            <p class="aide">Formats acceptés : png, jpg, webp, avif. Dimension à respecter : 150 * 150</p>
+            <div id="cible" class="upload">
+                <div class="content">
+                    <i class="bi bi-download" style="font-size: 1rem; color: #8b8a8a;"></i>
+                    <div style="font-size: 0.8rem; ">Cliquer ou faire glisser la nouvelle photo ici</div>
+                </div>
+            </div>
+            <div id="nomFichier" style="padding-left : 5px; font-size: 0.8rem "></div>
+            <input type="file" id="fichier" accept="" style='display: none '>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button id="btnAjouter" class="btn btn-danger">Ajouter</button>
+    </div>
+</div>
+

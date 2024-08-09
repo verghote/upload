@@ -1,0 +1,12 @@
+# Ignorer les fichiers et répertoires générés par PhpStorm
+.idea/
+
+# Ignorer les fichiers de cache de Composer
+vendor/
+composer.lock
+
+# Ignorer les répertoires suivants
+.admin
+
+# Ignorer les fichiers suivants
+

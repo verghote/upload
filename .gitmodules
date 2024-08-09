@@ -1,0 +1,6 @@
+[submodule "classetechnique"]
+	path = classetechnique
+	url = https://github.com/verghote/classetechnique.git
+[submodule "erreur"]
+	path = erreur
+	url = https://github.com/verghote/erreur.git

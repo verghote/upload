@@ -1,0 +1,30 @@
+<div class="formulaire" style="max-width: 600px">
+    <label for="nomFichier" class='col-form-label obligatoire'>Fichier PDF</label>
+    <div class="input-group ">
+        <button id="btnFichier" class="btn btn-sm btn-outline-secondary">Parcourir...</button>
+        <input type="text" id="nomFichier" placeholder='Choisissez un fichier pdf de 2 Mo max...'
+               class="form-control" readonly/>
+    </div>
+    <input type="file" id="fichier" accept="" style='display: none '>
+    <button id="btnAjouter" class="btn btn-danger mt-3">Ajouter</button>
+    <hr>
+
+    <div class='table-responsive mt-1'>
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="col-1">
+                    <span id="nb"></span>
+                </th>
+                <th class="col-11">
+                    Nom du document
+                </th>
+            </tr>
+            </thead>
+            <tbody id="lesLignes"></tbody>
+        </table>
+    </div>
+</div>
+
+
+

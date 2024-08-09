@@ -1,0 +1,234 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: darkslategray;
+    font-weight: 400;
+    background-color: white;
+}
+
+main {
+    flex-grow: 1;
+    margin: 5px 20px 5px 20px;
+}
+
+header, footer {
+    min-height: 70px;
+    vertical-align: middle;
+    color: white;
+    background-color: #00469c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #CC0000;
+    text-decoration: #CC0000;
+}
+
+footer {
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ Tableau
+*/
+
+table {
+    color: black;
+    border: 2px solid #68a0dd;
+    padding: 5px;
+}
+
+tr {
+    line-height: 25px;
+}
+
+thead {
+    background-color: #D0D0D0;
+
+    color: black;
+    font-weight: bold;
+    border: 2px solid #68a0dd;
+}
+
+tbody {
+    /*  background-color: #E0E0E0; */
+    border: 2px solid #68a0dd;
+}
+
+th {
+    line-height: 40px;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+/* lien */
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+
+/* autres conteneurs */
+.cadre {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    border: #1d1d1d 1px solid;
+}
+
+.menu {
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #FFF;
+}
+
+.cadre .menu a {
+    display: block;
+    text-align: left;
+}
+
+/* les champs de saisie */
+
+.obligatoire:after {
+    color: red;
+    content: ' *';
+}
+
+.form-control, .form-select {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    color: dodgerblue;
+}
+
+.form-control:disabled, .form-select:disabled {
+    border: 0 solid;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.form-select:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+/* RETIRER LES FLÈCHES DES INPUTS NUMBER */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* une case à cocher mise en forme par bootstrap : le label est toujours à droite */
+
+
+.formulaire {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    color: darkblue;
+    border-radius: 10px;
+    border: darkblue 1px solid;
+}
+
+.ck-editor__editable { min-height: 150px;}
+
+
+/* Style pour la zone déposer d'un upload par glisser déposer */
+.upload {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed #aaa;
+    margin : 10px;
+    color: #666666;
+    background-color: #F0F0F2;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.upload .content {
+    position: absolute; /* Positionnement absolu pour le contenu */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrage absolu */
+}
+
+.upload:hover {
+    background-color : #C0C0C0;
+    cursor :  pointer
+}
+
+.upload img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.aide {
+    font-size: 0.8rem;
+    font-style : italic;
+    color : darkseagreen;
+}
+
+
+

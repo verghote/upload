@@ -1,0 +1,37 @@
+<div class="formulaire" style="width: 36rem">
+    <div id="msg"></div>
+    <label for="titre"
+           data-bs-toggle="popover"
+           data-bs-trigger="hover"
+           data-bs-html="true"
+           data-bs-placement='top'
+           data-bs-content="<div style='font-size:10px'>
+						Entre 10 et 75 caractères
+						<br> Doit commencer par une lettre
+						</div>"
+           class='col-form-label obligatoire'>
+        Titre au document
+    </label>
+    <input id='titre'
+           type="text"
+           class="form-control"
+           pattern="^[a-zA-ZÀ-ÿçÇ0-9]([ '\-]?[a-zA-ZÀ-ÿçÇ0-9]*)*$"
+           required
+           minlength=10
+           maxlength=75
+    >
+
+    <label for="nomFichier" class='col-form-label obligatoire'>Fichier PDF</label>
+    <div class="input-group ">
+        <button id="btnFichier" class="btn btn-sm btn-outline-secondary">Parcourir...</button>
+        <input type="text" id="nomFichier" placeholder = 'Choisissez un fichier pdf de 2 Mo max...' class="form-control" readonly/>
+    </div>
+    <input type="file" id="fichier" accept="" style='display: none '>
+    <div class="d-flex justify-content-evenly">
+        <button id="btnAjouter" class="btn btn-danger mt-3">Ajouter</button>
+        <a href="javascript:history.go(-1)" class="btn btn-secondary mt-3">
+            <i class="bi bi-arrow-90deg-up"></i>
+            Annuler
+        </a>
+    </div>
+</div>
