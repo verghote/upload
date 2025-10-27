@@ -1,0 +1,20 @@
+[
+  {
+    "label": "PDF",
+    "href": "/uploaddocument"
+  },
+  {
+    "label" : "Image",
+    "href" : "/uploadimage"
+  },
+  {
+    "label" : "Document",
+    "href" : "/document/liste"
+  },
+  {
+    "label" : "Club",
+    "href" : "/club/liste"
+  }
+]
+
+

@@ -1,0 +1,24 @@
+<div style="margin:25px;">
+    <div class="formulaire" style="margin :1rem;  width: 1024px ">
+        <div id="msg" class="m-1 erreur"></div>
+        <label for="titre" class='obligatoire'>
+            Titre au document <span class='commentaire'>Entre 10 et 75 caractères, en commençant par une lettre</span>
+        </label>
+        <input id='titre'
+               type="text"
+
+               pattern="^[a-zA-ZÀ-ÿçÇ0-9]([ '\-]?[a-zA-ZÀ-ÿçÇ0-9]*)*$"
+               required
+               minlength=10
+               maxlength=75
+        >
+
+        <label for="nomFichier" class='obligatoire'>Fichier PDF</label>
+        <div class="groupe-fichier">
+            <button id="btnFichier" class="btn btn-sm btn-outline-secondary">📁 Choisir un fichier</button>
+            <span id="nomFichier" class="texte-muted ms-2"></span>
+        </div>
+        <input type="file" id="fichier" accept="" style='display: none '>
+        <button id="btnAjouter" class="btn btn-danger">Ajouter</button>
+    </div>
+</div>

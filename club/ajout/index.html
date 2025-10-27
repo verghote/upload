@@ -1,0 +1,42 @@
+<div style="margin:25px;">
+    <div class="formulaire" style="margin :1rem; max-width: 1024px ">
+        <div id="msg"></div>
+
+        <!-- Code -->
+        <label for="id" class="obligatoire">
+            Code <span class="commentaire">(6 chiffres commençant par 080) </span>
+        </label>
+        <input id="id"
+               type="text"
+               style="width: 150px;"
+               required
+               minlength="6"
+               maxlength="6"
+               pattern="^080[0-9]{3}$"
+               autocomplete="off">
+
+        <!-- Nom -->
+        <label for="nom" class="obligatoire">
+            Nom <span class="commentaire">(lettres non accentuées, chiffres ou symboles suivants : ' - et .) </span>
+        </label>
+        <input id="nom"
+               type="text"
+               required
+               maxlength="30"
+               pattern="^[A-Za-z]+([ '\-.]?[A-Za-z0-9])*$"
+               autocomplete="off">
+        <!-- Photo -->
+        <label for="fichier">
+            Logo du club <span id='label' class="commentaire">(png, jpg, webp, avif)</span>
+        </label>
+        <div id="cible" class="upload" style="width: 300px; height: 300px;">
+            Cliquez ou glissez-déposez votre logo dans ce cadre
+        </div>
+        <div id="nomFichier" style="padding-left: 5px; font-size: 0.8rem;"></div>
+        <input type="file" id="fichier" accept="" style="display: none;">
+        <!-- Bouton -->
+        <div style="text-align: center;">
+            <button id="btnAjouter" class="btn btn-sm btn-outline-danger mt-3">✚ Ajouter</button>
+        </div>
+    </div>
+</div>

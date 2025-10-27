@@ -1,0 +1,18 @@
+<div class="form-recherche" style="margin-left:25px">
+    <label for="nomR">Sélection du club :</label>
+    <input id="nomR" type="text" pattern="^[a-zA-Z ]+$"
+           style="width: 350px"
+           placeholder="Saisir les premières lettres"
+           autocomplete="off">
+</div>
+<div class="formulaire" id="formulaire" style="display: none; width: 25rem; margin-left: 25px;">
+    <div id="msg"></div>
+
+    <label for="fichier">
+        Cliquez ou glissez-déposez votre logo dans le cadre ci-dessous
+        <div id='label' class="commentaire"></div>
+    </label>
+    <div id="cible" class="upload" style="width: 300px; height: 300px;"></div>
+    <input type="file" id="fichier" accept="" style="display: none;">
+</div>
+</div>

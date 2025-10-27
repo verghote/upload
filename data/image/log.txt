@@ -1,0 +1,111 @@
+﻿=== LOG DE MISE À JOUR - 2025-07-08 17:58:39 ===
+
+2025-07-08 17:58:39 ✅ Tous les répertoires de recherche sont valides.
+2025-07-08 17:58:42 📁 Répertoires cibles détectés :
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\01 La gestion des données\La consultation\Consultation etudiant\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\01 La gestion des données\Version initiale sur GitHub\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\02 Le téléversement\Version initiale\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\03 Les API\Api\Application\api\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\03 Les API\Api\Application\calendrier\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\03 Les API\Correction\api\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\03 Les API\Correction\calendrier\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\04  Le modèle MVC\Version initiale sur GitHub\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Correction\Inscription\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Correction\trombinoscope\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Etudiant\inscription\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Etudiant\trombinoscope\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 2\Programmation Web\Le protocole WebSocket\projet\css
+2025-07-08 17:58:42  - D:\SLAM\Bloc 3\Sécuriser un développement web\Version initiale\css
+2025-07-08 17:58:42  - J:\api\css
+2025-07-08 17:58:42  - J:\calendrier\css
+2025-07-08 17:58:42  - J:\ctf\css
+2025-07-08 17:58:42  - J:\devoir\css
+2025-07-08 17:58:42  - J:\encodage\css
+2025-07-08 17:58:42  - J:\evaluation\css
+2025-07-08 17:58:42  - J:\exemple\css
+2025-07-08 17:58:42  - J:\exemple - Old\css
+2025-07-08 17:58:42  - J:\gestion\css
+2025-07-08 17:58:42  - J:\musicol\css
+2025-07-08 17:58:42  - J:\ppe\css
+2025-07-08 17:58:42  - J:\ppe\vendor\mpdf\mpdf\src\Css
+2025-07-08 17:58:42  - J:\ppe - Copie\css
+2025-07-08 17:58:42  - J:\test2\css
+2025-07-08 17:58:42  - J:\upload\css
+2025-07-08 17:58:42  - J:\VirtualHostSlam\musicol\css
+2025-07-08 17:58:42  - J:\VirtualHostSlam\vds\css
+2025-07-08 17:58:42  - J:\websocket\css
+2025-07-08 17:58:42  - I:\api\css
+2025-07-08 17:58:42  - I:\compte\css
+2025-07-08 17:58:42  - I:\consultation\css
+2025-07-08 17:58:42  - I:\evaluation\css
+2025-07-08 17:58:42  - I:\f1\css
+2025-07-08 17:58:42  - I:\gestion\css
+2025-07-08 17:58:42  - I:\inscription\css
+2025-07-08 17:58:42  - I:\maj\css
+2025-07-08 17:58:42  - I:\membre\css
+2025-07-08 17:58:42  - I:\musicol\css
+2025-07-08 17:58:42  - I:\portfolio\css
+2025-07-08 17:58:42  - I:\ppe\css
+2025-07-08 17:58:42  - I:\trombinoscope\css
+2025-07-08 17:58:42  - I:\upload\css
+2025-07-08 17:58:42  - I:\vds\css
+2025-07-08 17:58:42  - I:\vds - Copie\css
+2025-07-08 17:58:42  - P:\courses80\css
+2025-07-08 17:58:42  - P:\courses80\vendor\mpdf\mpdf\src\Css
+2025-07-08 17:58:42  - P:\valdesomme\css
+2025-07-08 17:58:42  - P:\valdesomme\vendor\mpdf\mpdf\src\Css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\01 La gestion des données\La consultation\Consultation etudiant\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\01 La gestion des données\Version initiale sur GitHub\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\02 Le téléversement\Version initiale\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\03 Les API\Api\Application\api\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\03 Les API\Api\Application\calendrier\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\03 Les API\Correction\api\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\03 Les API\Correction\calendrier\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\04  Le modèle MVC\Version initiale sur GitHub\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Correction\Inscription\css\style.css
+2025-07-08 17:58:42 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Correction\trombinoscope\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Etudiant\inscription\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\05 La génération de documents PDF\Etudiant\trombinoscope\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : D:\SLAM\Bloc 2\Programmation Web\Le protocole WebSocket\projet\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : D:\SLAM\Bloc 3\Sécuriser un développement web\Version initiale\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\api\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\calendrier\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\ctf\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\devoir\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\encodage\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\evaluation\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\exemple\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\exemple - Old\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\gestion\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\musicol\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\ppe\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\ppe - Copie\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\test2\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\upload\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\VirtualHostSlam\musicol\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\VirtualHostSlam\vds\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : J:\websocket\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\api\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\compte\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\consultation\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\evaluation\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\f1\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\gestion\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\inscription\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\maj\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\membre\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\musicol\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\portfolio\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\ppe\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\trombinoscope\css\style.css
+2025-07-08 17:58:43 ⏩ Ignoré (à jour) : I:\upload\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\vds\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : I:\vds - Copie\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : P:\courses80\css\style.css
+2025-07-08 17:58:43 🔁 Copié (plus ancien) : P:\valdesomme\css\style.css
+2025-07-08 17:58:43 
+📋 Résumé final :
+2025-07-08 17:58:43  - Fichiers copiés : 48
+2025-07-08 17:58:43  - Fichiers inchangés : 1
+2025-07-08 17:58:43 === Fin de l'opération ===
+

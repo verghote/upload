@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Liste",
+    "href": "/document/liste"
+  },
+  {
+    "label": "Nouveau",
+    "href": "/document/ajout"
+  },
+  {
+    "label": "Mise à jour",
+    "href": "/document/maj"
+  },
+  {
+    "label": "Ordonnancement",
+    "href": "/document/ordonnancement"
+  }
+]

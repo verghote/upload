@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Liste",
+    "href": "/club/liste"
+  },
+  {
+    "label": "Nouveau",
+    "href": "/club/ajout"
+  },
+  {
+    "label": "Mise à jour",
+    "href": "/club/maj"
+  },
+  {
+    "label": "Logo",
+    "href": "/club/logo"
+  }
+]

@@ -1,0 +1,13 @@
+# Environnement de développement
+.idea/
+*.log
+.DS_Store
+.admin/git.php
+.admin/publier.php
+
+# Dépendances Composer
+/vendor/
+composer.lock
+
+# Répertoires spécifiques à l'application
+
