@@ -1,0 +1,36 @@
+<div class="page-card">
+    <header class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Téléversement d'une image
+            </h1>
+        </div>
+    </header>
+    <div class="page-body">
+        <div id="cible" class="upload">
+            <div class="upload-titre">Cliquez ou glissez-déposez vos images ici</div>
+            <div class="upload-details">
+                <span>Formats acceptés : <strong>JPG, JPEG, PNG, WEBP, AVIF</strong></span>
+                <span>Taille maximale : <strong>300 Ko</strong></span>
+                <span>Redimensionnement automatique à <strong>350 px</strong> max de large</span>
+
+            </div>
+            L'image sera automatiquement afficher en dessous
+        </div>
+        <input type="file" id="fichier" accept=".jpg,.jpeg,.png,.webp,.avif" style="display:none">
+        <div id="lesCartes"></div>
+    </div>
+</div>
+
+<!-- Modèle d'une carte photo -->
+<template id="tplCartePhoto">
+    <div class="card carte-club">
+        <div class="card-header carte-header">
+            <span class="nom-fichier text-truncate">Nom du fichier</span>
+            <button type="button" class="btn-close bouton-supprimer" aria-label="Supprimer"></button>
+        </div>
+        <div class="card-body carte-body">
+            <img src="" alt="" class="carte-img">
+        </div>
+    </div>
+</template>

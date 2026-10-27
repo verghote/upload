@@ -1,0 +1,65 @@
+.table-clubs {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table-clubs .col-action {
+    width: 40px;
+}
+
+.table-clubs .col-numero {
+    width: 100px;
+}
+
+.table-clubs .col-nom {
+    width: auto;
+}
+
+/* Cellules */
+.table-clubs th,
+.table-clubs td {
+    padding: 6px 8px;
+    vertical-align: middle;
+}
+
+/* Colonne action */
+.table-clubs .colonne-action {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Colonne numéro */
+.table-clubs .colonne-numero {
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Colonne nom */
+.table-clubs .colonne-nom {
+    vertical-align: middle;
+}
+
+/* Input */
+.table-clubs .colonne-nom input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.table-clubs .bouton-supprimer {
+    color: #dc3545;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.table-clubs .bouton-supprimer:hover {
+    color: #b02a37;
+    transform: scale(1.3);
+}

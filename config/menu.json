@@ -1,0 +1,26 @@
+{
+  "brand": {
+    "label": "Téléversement",
+    "href": "/",
+    "icon": "/css/logo.png"
+  },
+  "items": [
+    {
+      "label": "Classement",
+      "href": "/uploadclassement/"
+    },
+    {
+      "label": "Photo",
+      "href": "/uploadimage/"
+    },
+    {
+      "label": "Document",
+      "href": "/document/liste"
+    },
+    {
+      "label": "Club",
+      "href": "/club/liste"
+    }
+  ]
+}
+

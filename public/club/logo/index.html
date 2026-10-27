@@ -1,0 +1,36 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+               Gestion des logos des clubs
+            </h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="page-body">
+            <div id='msg' class="erreur"></div>
+            <input type="file" id="fichier" accept=".jpg, .jpeg, .png, .webp, .avif" hidden>
+            <div class="consigne-logo" role="note">
+                <span class="consigne-logo-icone" aria-hidden="true">ⓘ</span>
+                <p>Cliquez sur le logo d’un club pour le modifier</p>
+            </div>
+            <div id='lesCartes'></div>
+        </div>
+    </div>
+</div>
+
+<template id="tplCarteClub">
+    <div class="carte-club">
+        <div class="carte-header"></div>
+        <div class="carte-body">
+            <div class="cible-logo">
+                <img class="carte-img" alt="Logo du club">
+                <div class="logo-vide">
+                    <span>Cliquer pour ajouter un logo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+

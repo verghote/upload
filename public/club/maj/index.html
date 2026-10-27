@@ -1,0 +1,41 @@
+<table class="table-clubs">
+    <colgroup>
+        <col class="col-action">
+        <col class="col-numero">
+        <col class="col-nom">
+    </colgroup>
+
+    <thead>
+    <tr>
+        <th></th>
+        <th>Numéro</th>
+        <th>Nom</th>
+    </tr>
+    </thead>
+
+    <tbody id="lesLignes"></tbody>
+</table>
+
+<template id="modeleLigneClub">
+    <tr>
+        <td class="colonne-action">
+            <button
+                    type="button"
+                    class="bouton-action bouton-supprimer"
+                    aria-label="Supprimer le club"
+                    title="Supprimer le club"
+            >✘</button>
+        </td>
+
+        <td class="colonne-numero"></td>
+
+        <td class="colonne-nom">
+            <input
+                    type="text"
+                    required
+                    maxlength="60"
+                    pattern="^[A-Za-z]+([ '\-.]?[A-Za-z0-9])*$"
+            >
+        </td>
+    </tr>
+</template>

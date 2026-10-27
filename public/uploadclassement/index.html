@@ -1,0 +1,56 @@
+<div class="page-card">
+    <header class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Téléversement d'un document
+            </h1>
+        </div>
+    </header>
+    <div class="page-body">
+        <!-- Section Ajout -->
+        <section class="bloc-info section-ajout">
+            <h2>Ajout d'un document</h2>
+            <div id="msg"></div>
+            <div class="champ">
+                <label for="btnFichier" class="obligatoire">
+                    Fichier PDF <span class="commentaire">(taille limitée à 512 Ko)</span>
+                </label>
+                <div class="groupe-fichier">
+                    <button id="btnFichier"></button>
+                    <span id="nomFichier"></span>
+                </div>
+                <input type="file" id="fichier" accept=".pdf" style="display: none">
+            </div>
+            <button id="btnAjouter">Ajouter</button>
+        </section>
+
+        <!-- Section Affichage des documents -->
+        <section class="bloc-info section-documents">
+            <h2>Documents téléversés</h2>
+            <div class="table-conteneur">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-action">Action</th>
+                            <th class="col-document">Nom du fichier</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lesLignes"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<!-- Template pour une ligne du tableau -->
+<template id="tplLigneDocument">
+    <tr>
+        <td class="col-action text-center">
+            <button type="button" class="btn-supprimer btn-action" title="Supprimer le document">❌</button>
+        </td>
+        <td class="col-document">
+            <a href="" target="doc" class="lien-document"></a>
+        </td>
+    </tr>
+</template>

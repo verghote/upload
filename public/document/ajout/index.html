@@ -1,0 +1,38 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+               Nouveau document
+            </h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <div id="msg" class="m-1 erreur"></div>
+        <label for="titre" class='obligatoire'>
+            Titre du document <span class='commentaire'>Entre 10 et 100 caractères, en commençant par une lettre</span>
+        </label>
+        <input id='titre'
+               type="text"
+
+               pattern="^[a-zA-ZÀ-ÿçÇ0-9]([ '\-]?[a-zA-ZÀ-ÿçÇ0-9]*)*$"
+               required
+               minlength=10
+               maxlength=100
+        >
+
+        <div class="champ">
+            <label for="btnFichier" class="obligatoire">
+                Fichier PDF <span class="commentaire">(taille limitée à 512 Ko)</span>
+            </label>
+            <div class="groupe-fichier">
+                <button id="btnFichier"></button>
+                <span id="nomFichier"></span>
+            </div>
+            <input type="file" id="fichier" accept=".pdf" style="display: none">
+        </div>
+            <button id="btnAjouter">Ajouter</button>
+
+
+
+    </div>
+</div>

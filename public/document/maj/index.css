@@ -1,0 +1,21 @@
+.documents {
+    margin-left: 25px;
+}
+
+.colonne-actions {
+    width: 60px;
+}
+
+.colonne-titre {
+    width: 700px;
+}
+
+.document-actions,
+.document-titre {
+    vertical-align: middle;
+}
+
+.document-actions {
+    text-align: center;
+    white-space: nowrap;
+}

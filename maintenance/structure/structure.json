@@ -1,0 +1,22 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "name": "upload",
+    "user": "root",
+    "password": ""
+  },
+  "tables": {
+    "club": [
+      "id",
+      "nom",
+      "logo"
+    ],
+    "document": [
+      "id",
+      "titre",
+      "fichier",
+      "rang"
+    ]
+  }
+}

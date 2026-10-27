@@ -1,0 +1,22 @@
+[
+  {
+    "label": "\uD83D\uDC41\uFE0F Liste",
+    "href": "/club/liste",
+    "title": "Liste des clubs"
+  },
+  {
+    "label": "➕ Ajout",
+    "href": "/club/ajout",
+    "title": "Ajouter un nouveau club"
+  },
+  {
+    "label": "✏\uFE0F Mise à jour",
+    "href": "/club/maj",
+    "title": "Mettre à jour un club"
+  },
+  {
+    "label": "🖼️ Logo",
+    "href": "/club/logo",
+    "title": "Mettre à jour le logo d'un club"
+  }
+]

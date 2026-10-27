@@ -1,0 +1,35 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Liste des documents
+            </h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50px; text-align: center;"></th>
+                    <th>Nom du document</th>
+                    <th>Fichier PDF</th>
+                </tr>
+            </thead>
+            <tbody id="lesLignes"></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Template pour une ligne de document -->
+<template id="tplLigneDocument">
+    <tr>
+        <td class="col-action text-center">
+            <!-- État 1 : Fichier disponible (affiché par défaut via JS) -->
+            <a href="" target="pdf" title="Afficher le document" class="lien-afficher-pdf d-none">👁️</a>
+            <!-- État 2 : Fichier manquant -->
+            <span class="icone-fichier-absent d-none" title="Fichier non trouvé sur le serveur" style="cursor: help;">⚠️️</span>
+        </td>
+        <td class="col-titre"></td>
+        <td class="col-fichier"></td>
+    </tr>
+</template>

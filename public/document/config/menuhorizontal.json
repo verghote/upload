@@ -1,0 +1,23 @@
+[
+  {
+    "label": "\uD83D\uDCCB Liste",
+    "href": "/document/liste",
+    "title": "Liste des documents"
+  },
+  {
+    "label": "➕ Ajout",
+    "href": "/document/ajout",
+    "title": "Ajouter un nouveau document"
+  },
+  {
+    "label": "✏\uFE0F Mise à jour",
+    "href": "/document/maj",
+    "title": "Mettre à jour un document"
+  },
+  {
+    "label": "️ Ordonnancement",
+    "href": "/document/ordonnancement",
+    "title": "Ordonner les documents"
+  }
+
+]

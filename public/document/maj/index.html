@@ -1,0 +1,50 @@
+<input type="file" id="fichier" accept=".pdf" hidden>
+<div id="msg"></div>
+<div class="documents">
+    <table>
+        <thead>
+        <tr>
+            <th class="colonne-actions"></th>
+            <th class="colonne-titre">Titre</th>
+        </tr>
+        </thead>
+        <tbody id="lesLignes"></tbody>
+    </table>
+</div>
+
+<template id="templateLigneDocument">
+    <tr>
+        <td class="document-actions">
+            <!-- État 1 : Fichier disponible (affiché par défaut via JS) -->
+            <a href="" target="pdf" title="Afficher le document" class="lien-afficher-pdf d-none">👁️</a>
+            <!-- État 2 : Fichier manquant -->
+            <span class="icone-fichier-absent d-none" title="Fichier non trouvé sur le serveur" style="cursor: help;">⚠️️</span>
+            <button
+                    type="button"
+                    class="bouton-action btn-remplacer"
+                    title="Remplacer le document"
+                    aria-label="Remplacer le document"
+                    style="color:blue; background:none">
+                ♻️
+            </button>
+
+            <button
+                    type="button"
+                    class="bouton-action btn-supprimer"
+                    title="Supprimer l'annonce"
+                    aria-label="Supprimer l'annonce"
+                    style="color:red; background:none">
+                ✘
+            </button>
+        </td>
+        <td class="document-titre">
+            <input
+                    type="text"
+                    data-champ="titre"
+                    maxlength="100"
+                    minlength="10"
+                    required
+                    aria-label="Titre du document">
+        </td>
+    </tr>
+</template>

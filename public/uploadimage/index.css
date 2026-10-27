@@ -1,0 +1,125 @@
+/* =========================================================
+   ZONE DE TÉLÉVERSEMENT (DRAG & DROP)
+   ========================================================= */
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 140px;
+    padding: 1rem;
+    margin: 0 0 1.5rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 2px dashed #6c757d;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.upload .upload-titre {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.upload .upload-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.upload .upload-details span strong {
+    color: #212529;
+}
+
+.upload.dragover {
+    background-color: #e9ecef;
+    border-color: #0d6efd;
+    border-style: solid;
+}
+
+
+/* =========================================================
+   GRILLE DES CARTES
+   ========================================================= */
+
+#lesCartes {
+    display: grid;
+    /* auto-fill conserve la largeur fixe sur la dernière ligne (conseillé) */
+    /* Remplace par auto-fit si tu veux que la dernière ligne s'étire à 100% */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+
+/* =========================================================
+   STRUCTURE D'UNE CARTE
+   ========================================================= */
+
+#lesCartes .carte-club {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* En-tête de la carte */
+#lesCartes .carte-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Corps de la carte */
+#lesCartes .carte-body {
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+/* Image dans la carte */
+#lesCartes .carte-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* Boutons d'action */
+#lesCartes .carte-header .bouton-supprimer {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE (MOBILES)
+   ========================================================= */
+
+@media screen and (max-width: 660px) {
+    #lesCartes {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}

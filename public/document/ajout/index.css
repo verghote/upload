@@ -1,0 +1,76 @@
+
+/* =========================================================
+   GROUPE FICHIER (SÉLECTION + NOM EN PLEINE LARGEUR)
+   ========================================================= */
+
+.groupe-fichier {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: var(--champ-height, 42px);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--champ-border, #ced4da);
+    border-radius: var(--champ-radius, 8px);
+    background-color: var(--champ-background, #fff);
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.groupe-fichier:hover {
+    border-color: #adb5bd;
+}
+
+.groupe-fichier:focus-within {
+    border-color: var(--champ-focus, #1769aa);
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.2);
+}
+
+/* Bouton à gauche */
+.groupe-fichier button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-right: 1px solid var(--champ-border, #ced4da);
+    border-radius: 0;
+    padding: 0 1rem;
+    background-color: #f1f3f5;
+    color: #495057;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.groupe-fichier button:hover {
+    background-color: #e2e6ea;
+    color: #212529;
+}
+
+/* Balise span : prend toute la largeur restante */
+.groupe-fichier span {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    padding: 0 0.85rem;
+    background-color: #fff;
+    color: #212529;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+/* Placeholder quand aucun fichier n'est choisi */
+.groupe-fichier span:empty::before {
+    content: "Aucun fichier choisi (cliquer ou glisser-déposer)";
+    color: #6c757d;
+    font-style: italic;
+}
+

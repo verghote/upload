@@ -1,0 +1,53 @@
+<div class="page-card">
+    <div class="page-header">
+        <div class="page-header-top">
+            <h1 class="page-title">
+                Nouveau club
+            </h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <div id="msg"></div>
+
+        <!-- Code -->
+        <label for="id" class="obligatoire">
+            Code <span class="commentaire">(6 chiffres commençant par 080) </span>
+        </label>
+        <input id="id"
+               type="text"
+               style="width: 150px;"
+               required
+               minlength="6"
+               maxlength="6"
+               pattern="^080[0-9]{3}$"
+               autocomplete="off">
+
+        <!-- Nom -->
+        <label for="nom" class="obligatoire">
+            Nom <span class="commentaire">(lettres non accentuées, chiffres ou symboles suivants : ' - et .) </span>
+        </label>
+        <input id="nom"
+               type="text"
+               required
+               maxlength="60"
+               pattern="^[A-Za-z]+([ '\-.]?[A-Za-z0-9])*$"
+               autocomplete="off">
+        <!-- Photo -->
+        <label for="fichier">
+            Logo du club <span id='label' class="commentaire">(png, jpg, webp, avif)</span>
+        </label>
+        <div id="cible" class="upload">
+            <div class="upload-titre">Cliquez ou glissez-déposez vos images ici</div>
+            <div class="upload-details">
+                <span>Formats acceptés : <strong>JPG, JPEG, PNG, WEBP, AVIF</strong></span>
+                <span>Taille maximale : <strong>300 Ko</strong></span>
+                <span>Redimensionnement automatique à <strong>350 px</strong> max de large</span>
+            </div>
+        </div>
+        <div id="nomFichier" style="padding-left: 5px; font-size: 0.8rem;"></div>
+        <input type="file" id="fichier" accept=".jpg, .jpeg, .png, .webp, .avif" style="display: none;">
+        <!-- Bouton -->
+        <button id="btnAjouter"> ✚ Ajouter</button>
+    </div>
+</div>
+</div>

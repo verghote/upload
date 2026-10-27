@@ -1,0 +1,72 @@
+/* =========================================================
+   PAGE UPLOAD DOCUMENT / CLASSEMENT
+   Feuille de style locale
+   ========================================================= */
+
+/* Disposition en 2 colonnes au-delà de 1024px */
+.page-card .page-body {
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* =========================================================
+   SECTIONS AJOUT & DOCUMENTS
+   ========================================================= */
+
+.section-ajout,
+.section-documents {
+    min-width: 0;
+}
+
+
+
+
+/* =========================================================
+   TABLEAU DES DOCUMENTS
+   ========================================================= */
+
+.table-conteneur {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-conteneur table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color-table, #68a0dd);
+}
+
+.table-conteneur table tbody tr:last-child td {
+    border-bottom: 2px solid var(--border-color-table, #68a0dd);
+}
+
+.table-conteneur th.col-action {
+    width: 50px;
+    text-align: center;
+}
+
+.table-conteneur th.col-document {
+    text-align: left;
+}
+
+/* =========================================================
+   RESPONSIVE : passage en-dessous à <= 1024px
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+    .page-card .page-body {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-card .page-body {
+        padding: 1rem;
+    }
+}
+

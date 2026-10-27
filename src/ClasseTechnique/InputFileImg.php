@@ -1,0 +1,134 @@
+<?php
+
+declare(strict_types=1);
+
+namespace ClasseTechnique;
+
+/**
+ * Gestion d'un fichier image téléversé.
+ *
+ * Ajoute les contrôles spécifiques aux images.
+ * @author Guy Verghote
+ * @version 2026.2
+ * @date    05/10/2026
+ */
+class InputFileImg extends InputFile
+{
+
+    // Largeur maximale autorisée.
+    protected int $maxWidth = 0;
+
+    // Hauteur maximale autorisée.
+    protected int $maxHeight = 0;
+
+    // L'image doit-elle être redimensionnée.
+    protected bool $resized = false;
+
+    /**
+     * Constructeur.
+     * @param array $fichier Données du fichier téléversé.
+     * @param array $lesParametres Paramètres de configuration.
+     */
+    public function __construct(array $fichier, $lesParametres)
+    {
+        parent::__construct($fichier, $lesParametres);
+
+        if (isset($lesParametres['maxWidth'])) {
+            $this->maxWidth = (int)$lesParametres['maxWidth'];
+        }
+
+        if (isset($lesParametres['maxHeight'])) {
+            $this->maxHeight = (int)$lesParametres['maxHeight'];
+        }
+
+        if (isset($lesParametres['resized'])) {
+            $this->resized = (bool)$lesParametres['resized'];
+        }
+        return $this;
+    }
+
+    /**
+     * Retourne la largeur maximale autorisée.
+     * @return int
+     */
+    public function getMaxWidth(): int
+    {
+        return $this->maxWidth;
+    }
+
+    /**
+     * Retourne la hauteur maximale autorisée.
+     * @return int
+     */
+    public function getMaxHeight(): int
+    {
+        return $this->maxHeight;
+    }
+
+    /**
+     * Retourne si l'image doit être redimensionnée.
+     * @return bool
+     */
+    public function getResized(): bool
+    {
+        return $this->resized;
+    }
+
+
+    /**
+     * Validation spécifique aux images.
+     *
+     * Vérifie que le fichier est une image valide et, lorsque des dimensions
+     * maximales sont définies et que le redimensionnement est désactivé,
+     * vérifie que ces dimensions sont respectées.
+     *
+     * Une valeur de 0 pour maxWidth ou maxHeight signifie qu'aucune limite
+     * n'est appliquée sur la dimension correspondante.
+     *
+     * @return bool
+     * @throws UserException
+     * @see InputFile::checkValidity()
+     */
+    protected function validationSpecifique(): bool
+    {
+        // Vérification que le fichier est bien une image.
+        $infos = getimagesize($this->getTmpName());
+
+        if ($infos === false) {
+            $this->validationMessage = "Le fichier n'est pas une image valide.";
+            return false;
+        }
+
+        // Aucune dimension maximale n'est définie :
+        // l'image est acceptée quelle que soit sa taille.
+        if ($this->maxWidth === 0 && $this->maxHeight === 0) {
+            return true;
+        }
+
+        // Le redimensionnement sera effectué lors de la copie.
+        // Il n'est donc pas nécessaire de rejeter l'image pour ses dimensions.
+        if ($this->resized) {
+            return true;
+        }
+
+        $largeur = $infos[0];
+        $hauteur = $infos[1];
+
+        // Vérification de la largeur maximale.
+        if ($this->maxWidth > 0 && $largeur > $this->maxWidth) {
+            $this->validationMessage =
+                "La largeur maximale de l'image est de {$this->maxWidth}px.";
+            return false;
+        }
+
+        // Vérification de la hauteur maximale.
+        if ($this->maxHeight > 0 && $hauteur > $this->maxHeight) {
+            $this->validationMessage =
+                "La hauteur maximale de l'image est de {$this->maxHeight}px.";
+            return false;
+        }
+
+        return true;
+    }
+
+}

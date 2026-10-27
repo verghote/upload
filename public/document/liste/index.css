@@ -1,0 +1,23 @@
+/* =========================================================
+   PAGE LISTE DES DOCUMENTS
+   Feuille de style locale
+   ========================================================= */
+
+.lien-afficher-pdf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-decoration: none !important;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.lien-afficher-pdf:hover {
+    transform: scale(1.3);
+}
+
+.fichier-absent {
+    color: #dc3545;
+    font-style: italic;
+}
